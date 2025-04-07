@@ -1,46 +1,138 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed's Portfolio</title>
- </head>
- <body>
-    <h1>Mohamed Oubagha's Portfolio</h1>
-    <h2>I'm a Web Developer</h2>
-    <a href="./public/Projects/MovieRanking/movie-ranking.html"><h3>Movie Ranking Project</h3></a>
-    <img src="./public/Images/Movie.png" alt="Movie Ranking Project" height="300"/>
-    <br/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Oubagha | Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      color: #004aad;
+      margin-top: 0;
+    }
+    .project-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eee;
+      font-size: 0.9rem;
+    }
+    .under-construction {
+      background-color: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeeba;
+      border-radius: 5px;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
 
-    <a href="./public/Projects/Birthday/birthday-invite.html"> <h3>Birthday Invite Project</h3></a>
-    <br/>
-    <img src="./public/Images/birthday.png" alt="Birthday Project" height="300"/>
-    <hr/>
+  <header>
+    <h1>Mohamed Oubagha</h1>
+    <p>Computer Engineering Student | Concordia University (Co-op)</p>
+    <nav>
+      <a href="https://www.linkedin.com/in/mohamed-oubagha-20799520a/">LinkedIn</a>
+      <a href="https://github.com/c-moha">GitHub</a>
+      <a href="mailto:mo.oubagha@gmail.com">Email</a>
+    </nav>
+  </header>
 
-    <a href="./public/Projects/Capstone1/index.html"><h3> My Resume </h3></a>
-    <br/>
-    <img src="./public/Images/Resume.png" alt="Resume" height="300"/>
-    <hr/>
+  <section>
+    <div class="under-construction">
+      🚧 This portfolio is currently under construction. Some sections may still be in progress. Stay tuned!
+    </div>
 
-    <a href="./public/about.html"> About Me</a>
-    <a href="./public/contact.html">Contact Me</a>
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        Passionate and detail-oriented Computer Engineering student with hands-on experience in embedded systems, networking,
+        software/hardware integration, machine learning, and full-stack development. Skilled in C/C++, Java, Python,
+        and React/Node.js. Known for delivering innovative solutions across system layers — from PCB design and real-time sensor integration
+        to modern web and mobile apps.
+      </p>
+    </div>
 
+    <div class="card">
+      <h2>Featured Projects</h2>
+      <p class="project-title">🛸 Autonomous Hovercraft</p>
+      <p>Designed an embedded real-time system using sensor fusion and low-level C to navigate a maze autonomously. Won 1st place in competition.</p>
 
-    
- </body>
- </html>
+      <p class="project-title">🧠 Cancer Cell Classification (ML)</p>
+      <p>Created a k-NN classifier in Java for cancer detection with CSV preprocessing, achieving 93% accuracy.</p>
 
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+      <p class="project-title">🌐 Peer-to-Peer Auction Platform</p>
+      <p>Implemented socket programming with TCP/UDP protocol for decentralized auctions. React for front-end, Java backend.</p>
 
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+      <p class="project-title">📡 Smart Fridge Monitoring System</p>
+      <p>ESP32-powered IoT system streaming sensor data to Android dashboard with Bluetooth/Wi-Fi and Firebase integration.</p>
 
-<!-- TODO 4: Add titles/subtitles etc. -->
+      <p class="project-title">🚒 ConUHacks Firefighter Scheduler</p>
+      <p>Hackathon project using Flask (Python) and React for smart fire dispatch based on severity and geolocation.</p>
+    </div>
 
-<!-- TODO 5: Add a link to the project pages -->
+    <div class="card">
+      <h2>Technical Skills</h2>
+      <p>
+        <strong>Languages:</strong> C, C++, Java, Python, JavaScript, HTML, CSS, SQL<br>
+        <strong>Frameworks & Tools:</strong> React.js, Node.js, Express.js, Git, Docker, Firebase<br>
+        <strong>Embedded:</strong> Arduino, ESP32, RTOS (learning), UART, I2C, PWM, ADC<br>
+        <strong>Simulation:</strong> DipTrace, Multisim, LTSpice<br>
+        <strong>Data/ML:</strong> Scikit-learn, Pandas, Data Preprocessing<br>
+        <strong>Protocols:</strong> TCP/IP, UDP, HTTP, DNS, Bluetooth, Socket Programming<br>
+        <strong>Soft Skills:</strong> Teamwork, Communication, Agile, Problem Solving
+      </p>
+    </div>
+  </section>
 
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+  <footer>
+    &copy; 2025 Mohamed Oubagha — Built with HTML & CSS — Montreal, QC
+  </footer>
 
-<!-- TODO 7: Add the Contact Me and About Me page links -->
+</body>
+</html>
